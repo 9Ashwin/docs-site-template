@@ -1,0 +1,56 @@
+{
+  "name": "Docs Template",
+  "nameZh": "文档站模板",
+  "title": "项目文档",
+  "titleTemplate": ":title · 项目文档",
+  "description": "基于 VitePress + Next.js 的官网与文档站模板：一次构建、一份产物，支持根路径与子路径部署。",
+  "lang": "zh-CN",
+  "repositoryUrl": "https://github.com/your-name/your-repo",
+  "docsEntry": "01-getting-started/01-introduction",
+  "releasesEntry": "07-releases/v0.1.0",
+  "versionFile": "VERSION",
+  "sections": [
+    {
+      "dir": "01-getting-started",
+      "label": "快速开始",
+      "entry": "01-introduction"
+    },
+    {
+      "dir": "02-architecture",
+      "label": "架构",
+      "entry": "01-overview"
+    },
+    {
+      "dir": "03-features",
+      "label": "功能",
+      "entry": "01-overview"
+    },
+    {
+      "dir": "04-api",
+      "label": "API",
+      "entry": "01-api-overview"
+    },
+    {
+      "dir": "05-clients",
+      "label": "客户端",
+      "entry": "01-web"
+    },
+    {
+      "dir": "06-development",
+      "label": "开发",
+      "entry": "01-dev-guide"
+    },
+    {
+      "dir": "07-releases",
+      "label": "版本",
+      "newestFirst": true,
+      "entry": "v0.1.0"
+    }
+  ],
+  "requiredRoutes": [
+    "/docs/",
+    "/docs/01-getting-started/01-introduction.html",
+    "/docs/03-features/01-overview.html",
+    "/docs/07-releases/v0.1.0.html"
+  ]
+}

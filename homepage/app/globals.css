@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "../../shared/brand.css";
+@import "../../shared/header.css";
+
+:root {
+  background: var(--mh-paper);
+  color: var(--mh-ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--mh-paper);
+  color: var(--mh-ink);
+  font-family: var(--mh-font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--mh-accent) 24%, transparent);
+  color: var(--mh-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--mh-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

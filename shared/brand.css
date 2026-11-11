@@ -1,0 +1,51 @@
+/* Shared by the product homepage and VitePress documentation. */
+:root {
+  color-scheme: light;
+  --mh-ink: #16102b;
+  --mh-ink-deep: #0d091c;
+  --mh-ink-soft: #453a63;
+  --mh-ink-mute: #6f6489;
+  --mh-accent: #7948ff;
+  --mh-accent-light: #bd69ff;
+  --mh-paper: #fcfbff;
+  --mh-paper-2: #f5f1fd;
+  --mh-paper-3: #ebe3fa;
+  --mh-rule: rgba(22, 16, 43, .12);
+  --mh-rule-soft: rgba(22, 16, 43, .07);
+  --mh-surface: #fff;
+  --mh-header: rgba(252, 251, 255, .96);
+  --mh-button-hover: #3f24a8;
+  --mh-accent-text: #5b2ecc;
+  --mh-accent-border: #d8caf7;
+  --mh-logo-ground: #fff;
+  --mh-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "HarmonyOS Sans SC", "Source Han Sans SC", "Noto Sans CJK SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --mh-font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Songti SC", "Source Han Serif SC", "Noto Serif CJK SC", "STSong", serif;
+  --mh-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+html.dark {
+  color-scheme: dark;
+  --mh-ink: #ece7f7;
+  --mh-ink-soft: #b6accd;
+  --mh-ink-mute: #a79dbf;
+  --mh-accent: #bd69ff;
+  --mh-accent-light: #d3a1ff;
+  --mh-paper: #0e0a19;
+  --mh-paper-2: #150f24;
+  --mh-paper-3: #1e1633;
+  --mh-rule: rgba(200, 185, 235, .14);
+  --mh-rule-soft: rgba(200, 185, 235, .08);
+  --mh-surface: #150f24;
+  --mh-header: rgba(14, 10, 25, .96);
+  --mh-button-hover: #d9c8ff;
+  --mh-accent-text: #d3a1ff;
+  --mh-accent-border: #6b5398;
+}
+
+/* 顶栏品牌区：紫色花瓣标志 + 字标，深浅色通用 */
+.mh-brand { color: var(--mh-ink); }
+.mh-brand img { display: block; width: auto; height: 30px; }
+.mh-brand .mh-brand-name { font-size: 19px; font-weight: 700; letter-spacing: -.02em; line-height: 1; }
+@media (max-width: 480px) {
+  .mh-brand img { height: 26px; }
+  .mh-brand .mh-brand-name { font-size: 17px; }
+}

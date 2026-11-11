@@ -1,0 +1,53 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # 项目仓库部署在 /<repo>/ 子路径，用户站点仓库部署在根路径。
+      SITE_BASE: ${{ endsWith(github.repository, '.github.io') && '' || format('/{0}', github.event.repository.name) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            homepage/package-lock.json
+      - name: Install dependencies
+        run: npm run setup
+      - name: Build homepage and documentation
+        run: npm run build
+      # GitHub Pages serves the artifact as-is; .nojekyll keeps files whose
+      # names start with an underscore (Next.js chunks live under
+      # /docs/_home/_next/) from being filtered by Jekyll.
+      - name: Add .nojekyll
+        run: touch static-site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: static-site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
