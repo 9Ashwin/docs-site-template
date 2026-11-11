@@ -1,22 +1,22 @@
 /* Shared by the product homepage and VitePress documentation. */
 :root {
   color-scheme: light;
-  --mh-ink: #16102b;
-  --mh-ink-deep: #0d091c;
-  --mh-ink-soft: #453a63;
-  --mh-ink-mute: #6f6489;
-  --mh-accent: #7948ff;
-  --mh-accent-light: #bd69ff;
-  --mh-paper: #fcfbff;
-  --mh-paper-2: #f5f1fd;
-  --mh-paper-3: #ebe3fa;
-  --mh-rule: rgba(22, 16, 43, .12);
-  --mh-rule-soft: rgba(22, 16, 43, .07);
+  --mh-ink: #101f38;
+  --mh-ink-deep: #0a1526;
+  --mh-ink-soft: #40536f;
+  --mh-ink-mute: #6d7d94;
+  --mh-accent: #b8863b;
+  --mh-accent-light: #d9a94f;
+  --mh-paper: #fdfcfa;
+  --mh-paper-2: #f5f3ee;
+  --mh-paper-3: #edeae2;
+  --mh-rule: rgba(16, 31, 56, .12);
+  --mh-rule-soft: rgba(16, 31, 56, .07);
   --mh-surface: #fff;
-  --mh-header: rgba(252, 251, 255, .96);
-  --mh-button-hover: #3f24a8;
-  --mh-accent-text: #5b2ecc;
-  --mh-accent-border: #d8caf7;
+  --mh-header: rgba(253, 252, 250, .96);
+  --mh-button-hover: #24395a;
+  --mh-accent-text: #886025;
+  --mh-accent-border: #dfd1b9;
   --mh-logo-ground: #fff;
   --mh-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "HarmonyOS Sans SC", "Source Han Sans SC", "Noto Sans CJK SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --mh-font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Songti SC", "Source Han Serif SC", "Noto Serif CJK SC", "STSong", serif;
@@ -24,28 +24,28 @@
 }
 html.dark {
   color-scheme: dark;
-  --mh-ink: #ece7f7;
-  --mh-ink-soft: #b6accd;
-  --mh-ink-mute: #a79dbf;
-  --mh-accent: #bd69ff;
-  --mh-accent-light: #d3a1ff;
-  --mh-paper: #0e0a19;
-  --mh-paper-2: #150f24;
-  --mh-paper-3: #1e1633;
-  --mh-rule: rgba(200, 185, 235, .14);
-  --mh-rule-soft: rgba(200, 185, 235, .08);
-  --mh-surface: #150f24;
-  --mh-header: rgba(14, 10, 25, .96);
-  --mh-button-hover: #d9c8ff;
-  --mh-accent-text: #d3a1ff;
-  --mh-accent-border: #6b5398;
+  --mh-ink: #e6ecf5;
+  --mh-ink-soft: #a9b6c9;
+  --mh-ink-mute: #9aaac0;
+  --mh-accent: #d9a94f;
+  --mh-accent-light: #e8c176;
+  --mh-paper: #0b1220;
+  --mh-paper-2: #101a2b;
+  --mh-paper-3: #16233a;
+  --mh-rule: rgba(190, 208, 232, .14);
+  --mh-rule-soft: rgba(190, 208, 232, .08);
+  --mh-surface: #101a2b;
+  --mh-header: rgba(11, 18, 32, .96);
+  --mh-button-hover: #c3d0e2;
+  --mh-accent-text: #e8c176;
+  --mh-accent-border: #685638;
 }
 
-/* 顶栏品牌区：紫色花瓣标志 + 字标，深浅色通用 */
+/* 顶栏品牌区：墨蓝字标 + 标志，深浅色通用 */
 .mh-brand { color: var(--mh-ink); }
 .mh-brand img { display: block; width: auto; height: 30px; }
-.mh-brand .mh-brand-name { font-size: 19px; font-weight: 700; letter-spacing: -.02em; line-height: 1; }
+.mh-brand .mh-brand-name { font-family: var(--mh-font-serif); font-size: 20px; font-weight: 600; letter-spacing: -.01em; line-height: 1; }
 @media (max-width: 480px) {
   .mh-brand img { height: 26px; }
-  .mh-brand .mh-brand-name { font-size: 17px; }
+  .mh-brand .mh-brand-name { font-size: 18px; }
 }

@@ -8,7 +8,7 @@
 
 1. 在 GitHub 上点 **Use this template** 创建自己的仓库（或复制目录）。
 2. 改 `site.config.json`：站点名称、描述、仓库地址、分类与每类入口页。
-3. 改 `shared/brand.css` 的主色（`--mh-accent` 等变量），替换 `public/logo.svg`、`public/favicon.ico`。
+3. 改 `shared/brand.css` 的主色（默认是墨蓝 + 纸白 + 鎏金的书籍感配色，字体与强调色都在这里的 `--mh-*` 变量），替换 `public/logo.svg`、`public/favicon.ico`。
 4. 改 `homepage/app/content.ts` 的首页文案（这是首页唯一需要改的文件）。
 5. 删掉 `01-getting-started` 到 `07-releases` 里的示例页，换成自己的文档。
 6. 把 `public/screenshots/`、`homepage/public/docs/_home/product/` 里的占位图换成真实截图。

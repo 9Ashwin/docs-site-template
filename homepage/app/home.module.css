@@ -236,7 +236,7 @@
   overflow: hidden;
   border: 1px solid rgba(200, 185, 235, .16);
   border-radius: 12px;
-  background: #0d0a17;
+  background: #0a1526;
   box-shadow: 0 40px 110px -65px rgba(84, 40, 190, .6);
 }
 
@@ -566,7 +566,7 @@
   position: relative;
   display: grid;
   aspect-ratio: 2780 / 1836;
-  background: #0d0a17;
+  background: #0a1526;
 }
 
 .galleryLayer {
@@ -824,7 +824,7 @@
   border: 1px solid rgba(200, 185, 235, .18);
   border-radius: 12px;
   background: var(--mh-ink-deep);
-  color: #ece7f7;
+  color: #e6ecf5;
 }
 
 .installBar {
@@ -847,13 +847,13 @@
   border: 1px solid rgba(189, 105, 255, .4);
   border-radius: 5px;
   background: rgba(189, 105, 255, .08);
-  color: #d3a1ff;
+  color: #e8c176;
   font-size: 12px;
   transition: background .2s, border-color .2s;
 }
 
 .copyButton:hover {
-  border-color: #bd69ff;
+  border-color: #d9a94f;
   background: rgba(189, 105, 255, .16);
 }
 
@@ -861,7 +861,7 @@
   margin: 0;
   padding: 22px 18px;
   overflow-x: auto;
-  color: #ece7f7;
+  color: #e6ecf5;
   font-family: var(--mono);
   font-size: clamp(12.5px, 1.6vw, 14.5px);
   line-height: 1.6;

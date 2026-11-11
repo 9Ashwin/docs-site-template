@@ -3,7 +3,7 @@
 
 /* ==========================================================================
    文档站主题
-   紫罗兰（logo 主色）· 纸白 · 浅紫（强调）
+   墨蓝（字标主色）· 纸白 · 鎏金（强调）
    ========================================================================== */
 
 :root {
@@ -14,9 +14,9 @@
   --vp-font-family-mono: var(--mh-font-mono);
 
   --vp-c-brand-1: var(--mh-ink);
-  --vp-c-brand-2: #4b2bb0;
+  --vp-c-brand-2: #24395a;
   --vp-c-brand-3: var(--mh-accent);
-  --vp-c-brand-soft: rgba(121, 72, 255, 0.14);
+  --vp-c-brand-soft: rgba(184, 134, 59, 0.14);
 
   --vp-c-bg: var(--mh-paper);
   --vp-c-bg-alt: var(--mh-paper-2);
@@ -38,7 +38,7 @@
   --vp-layout-max-width: 100vw;
   --vp-nav-height: 64px;
   --vp-sidebar-width: 288px;
-  --vp-code-block-bg: #f8f5ff;
+  --vp-code-block-bg: #fbf9f5;
 
   --vp-home-hero-name-color: var(--mh-ink);
   --vp-code-copy-copied-text-content: "已复制";
@@ -47,10 +47,10 @@
 .dark {
 
   --vp-c-brand-1: #e6ecf5;
-  --vp-c-brand-2: #cbb8ff;
+  --vp-c-brand-2: #c3d0e2;
   --vp-c-brand-3: var(--mh-accent);
   --vp-c-bg-elv: #101a2b;
-  --vp-code-block-bg: #120c22;
+  --vp-code-block-bg: #0d1626;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
 }
 
 ::selection {
-  background: rgba(121, 72, 255, 0.22);
+  background: rgba(184, 134, 59, 0.22);
 }
 
 /* --------------------------------------------------------------------------

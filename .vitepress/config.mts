@@ -106,7 +106,7 @@ export default withMermaid(
 
     head: [
       ['link', { rel: 'icon', href: `${siteBase}/docs/logo.svg`, type: 'image/svg+xml' }],
-      ['meta', { name: 'theme-color', content: '#7948ff' }],
+      ['meta', { name: 'theme-color', content: '#101f38' }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:title', content: siteConfig.title }],
       [
@@ -223,12 +223,12 @@ export default withMermaid(
       fontFamily:
         '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, sans-serif',
       themeVariables: {
-        primaryColor: '#efe9ff',
-        primaryTextColor: '#1b1230',
-        primaryBorderColor: '#b3a0e0',
-        lineColor: '#8577a8',
-        secondaryColor: '#fbf8ff',
-        tertiaryColor: '#f6f4fb',
+        primaryColor: '#eef1f6',
+        primaryTextColor: '#101f38',
+        primaryBorderColor: '#9aa8bd',
+        lineColor: '#7d8ba1',
+        secondaryColor: '#faf7ef',
+        tertiaryColor: '#f6f7f9',
         fontSize: '14px',
       },
     },
